@@ -20,9 +20,18 @@
       <form class="sidenav">
         <h2 class="side-header">תוכנית השותפים שלנו מעניינת אתכם? השאירו פרטים ונתקשר אליכם</h2>
   <div class="input-wrapper">
-  <input type="text"  placeholder="שם מלא">
-  <input type="tel" placeholder="טלפון">
-  <input type="email"  placeholder="מייל(לא חובה)">
+    <div class="sol-inp">
+      <input type="text"  required>
+      <label for="">שם מלא</label>
+    </div>
+    <div class="sol-inp">
+      <input type="tel" required>
+      <label for="">טלפון</label>
+    </div>
+    <div class="sol-inp">
+      <input type="email" required>
+      <label for="">מייל(לא חובה)</label>
+    </div>
   </div>
   <button class="form-btn">אני רוצה להצטרף 
   </button>
@@ -33,13 +42,12 @@
     <!-- header section -->
     <div class="web-wrapper">
     <header>
-      
       <div class="caption-banner">
         <h1 >הצטרפו לתוכנית השותפים של תות תקשורת</h1>
         <p>נותנים שירותי מחשוב, IT, מרכזיות? מספקים שירותי ייעוץ לעסקים או אינטגרציה? תות עסקים מזמינה אתכם לשדרג את הלקוחות שלכם עם מגוון שירותי תקשורת מתקדמים לעסק ולהרוויח עמלות ותמריצים משתלמים ביותר</p>
-  
     </div>
   </header>
+
   <div class="contact-nav">
     <button class="btn-aqua">התקשרו<i class="fa-solid fa-phone-flip"></i></button>
     <button class="btn-black">השאירו פרטים</button>
@@ -53,10 +61,8 @@
     </div>
 
     <div class="box-wrapper">
-
-    
     <div class="boxes">
-      <img src="./images/icons/walletS.png" alt="">
+      <img src="./images/icons/walletS.png" alt="" class="wallet">
       <h2 class="box-header">עמלה עבור ליד
         שנסגר במכירה</h2>
       <p>העבירו לידים פוטנציאליים למוקד המכירות של תות עסקים. במידה והם יהפכו למכירה, תקבלו עבורם עמלה</p>
@@ -68,7 +74,7 @@
       <p>כל מכירה של מגוון שירותי תות עסקים תזכה אתכם בעמלה</p>
     </div>
     <div class="boxes">
-      <img src="./images/icons/graphS.png" alt="">
+      <img src="./images/icons/graphS.png" alt="" class="graph">
       <h2 class="box-header">עמלה קבועה על תמיכה בלקוחות תות עסקים</h2>
       <p>קבלו תגמולים חודשיים בעבור שירותי תמיכה וליווי שוטפים ללקוחות תות עסקים</p>
     </div>

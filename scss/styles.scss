@@ -69,18 +69,44 @@ h6 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        input {
-          width: 332px;
-          margin: 0 0 29px;
-          padding: 7px 16px 9px 18px;
-          border-radius: 4px;
-          box-shadow: 0 3px 12px 0 rgba(23, 37, 79, 0.1);
-          border: solid 1px #d5d5d5;
-          background-color: #fff;
-          text-align: right;
-          font-family: Assistant;
-          :focus {
-            border: none;
+        .sol-inp {
+          position: relative;
+          width: auto;
+          height: auto;
+          label {
+            font-family: $web-font;
+            font-size: 20px;
+            text-align: right;
+            color: #717171;
+            line-height: 0.9;
+            position: absolute;
+            top: 10px;
+            right: 16px;
+            transition: 0.3s ease all;
+            pointer-events: none;
+          }
+          input {
+            width: 332px;
+            margin: 0 0 29px;
+            padding: 12px 16px 9px 18px;
+            border-radius: 4px;
+            box-shadow: 0 3px 12px 0 rgba(23, 37, 79, 0.1);
+            border: solid 1px #d5d5d5;
+            background-color: #fff;
+            text-align: right;
+            font-size: 20px;
+            font-family: Assistant;
+            &:focus + label,
+            &:focus + :valid + label {
+              font-size: 14px;
+              top: 5px;
+              right: 15px;
+              margin: 0px 0 5px 15px;
+              padding: 0 5px 0 5px;
+              background-color: #fff;
+              color: #717171;
+              font-family: Assistant;
+            }
           }
         }
       }
