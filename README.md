@@ -8,7 +8,7 @@ I was asked to build a responsive web page pixel perfect according to a zeplin d
 
 Download the files .
 
-Enter the project directory cd project-name  .
+Enter the project directory cd project-folder  .
 
 Install the node-modules by running "npm install".
 
