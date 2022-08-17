@@ -1,10 +1,12 @@
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   height: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -47,7 +49,7 @@ h6 {
 .container .sidenav {
   display: none;
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
   .container .sidenav {
     display: block;
     display: flex;
@@ -128,6 +130,7 @@ h6 {
 }
 .container .web-wrapper {
   width: 100vw;
+  /* ########## --end of the header section--######## */
 }
 .container .web-wrapper header {
   width: 100%;
@@ -140,7 +143,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media (max-width : 767px) and (min-width:360px) {
+@media (max-width : 767px) and (min-width:360px), only screen and (max-width:359px) {
   .container .web-wrapper header {
     background-image: url("../images/mobile/bnr.png");
   }
@@ -163,6 +166,11 @@ h6 {
   .container .web-wrapper header .caption-banner p {
     text-align: right;
     line-height: 1.33;
+  }
+}
+@media (max-width : 991px) and (min-width:768px) and (max-width : 767px) and (min-width:360px) {
+  .container .web-wrapper header .caption-banner .banner-sub {
+    min-width: 280px;
   }
 }
 @media (max-width : 1199px) and (min-width:992px) {
@@ -189,10 +197,11 @@ h6 {
     width: 384px;
   }
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
   .container .web-wrapper header {
     background-image: url("../images/desktop/banner.png");
     background-position: 100% 25%;
+    min-width: 1290px;
     height: 650px;
     align-items: flex-end;
   }
@@ -243,7 +252,7 @@ h6 {
   background-color: #000000;
   height: 72px;
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
   .container .web-wrapper .contact-nav {
     display: none;
   }
@@ -290,13 +299,12 @@ h6 {
   justify-content: center;
   align-items: center;
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
   .container .web-wrapper main {
-    width: 1440px;
     height: 584px;
   }
 }
-.container .web-wrapper .main-header {
+.container .web-wrapper main .main-header {
   width: 328px;
   text-align: center;
   margin-bottom: 46px;
@@ -304,46 +312,48 @@ h6 {
   font-family: Assistant;
 }
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper .main-header {
+  .container .web-wrapper main .main-header {
     width: 732px;
     margin-top: 58px;
   }
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper .main-header {
+  .container .web-wrapper main .main-header {
     width: 926px;
     margin-top: 58px;
     margin-bottom: 74px;
   }
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
-  .container .web-wrapper .main-header {
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
+  .container .web-wrapper main .main-header {
     width: 686px;
     margin-top: 58px;
     margin-bottom: 44px;
   }
 }
-.container .web-wrapper .main-header .m-headline {
+.container .web-wrapper main .main-header .m-headline {
   font-size: 26px;
   margin-bottom: 21px;
+  line-height: 1.75;
+  letter-spacing: 0.04px;
 }
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper .main-header .m-headline {
+  .container .web-wrapper main .main-header .m-headline {
     margin-bottom: 19px;
   }
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper .main-header .m-headline {
+  .container .web-wrapper main .main-header .m-headline {
     font-size: 32px;
     margin-bottom: 11px;
   }
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
-  .container .web-wrapper .main-header .m-headline {
-    font-size: 32px;
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
+  .container .web-wrapper main .main-header .m-headline {
+    font-size: 26px;
   }
 }
-.container .web-wrapper .main-header p {
+.container .web-wrapper main .main-header p {
   color: #666666;
   font-size: 18px;
   line-height: 1.33;
@@ -351,27 +361,39 @@ h6 {
   text-align: center;
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper .main-header p {
+  .container .web-wrapper main .main-header p {
     font-size: 28px;
     letter-spacing: 0.03px;
     line-height: 1.36;
   }
 }
 @media (max-width : 1920px) and (min-width:1200px ) {
-  .container .web-wrapper .main-header p {
+  .container .web-wrapper main .main-header p {
     font-size: 22px;
   }
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
-  .container .web-wrapper .box-wrapper {
+@media (max-width : 767px) and (min-width:360px) {
+  .container .web-wrapper main .main-header .sub-headline {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
+  .container .web-wrapper main .main-header .sub-headline {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
+  .container .web-wrapper main .box-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 54px;
     flex-direction: row-reverse;
   }
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper .box-wrapper {
+  .container .web-wrapper main .box-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 54px;
@@ -380,44 +402,53 @@ h6 {
   }
 }
 @media (max-width : 1920px) and (min-width:1200px ) {
-  .container .web-wrapper .box-wrapper {
+  .container .web-wrapper main .box-wrapper {
     width: 686px;
   }
 }
-.container .web-wrapper .boxes {
+.container .web-wrapper main .boxes {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
+@media (max-width : 767px) and (min-width:360px) {
+  .container .web-wrapper main .boxes {
+    max-width: 328px;
+  }
+}
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper .boxes {
-    width: 690px;
+  .container .web-wrapper main .boxes {
+    width: 670px;
   }
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper .boxes {
+  .container .web-wrapper main .boxes {
     max-width: 280px;
   }
 }
-.container .web-wrapper .boxes .box-header {
+.container .web-wrapper main .boxes .box-header {
   font-size: 24px;
   font-family: Assistant;
   font-weight: bold;
   margin: 15px 0 17px 0;
 }
+@media (max-width : 767px) and (min-width:360px) {
+  .container .web-wrapper main .boxes .box-header {
+    max-width: 267px;
+  }
+}
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper .boxes .box-header {
+  .container .web-wrapper main .boxes .box-header {
     margin: 15px 0 9px 0;
   }
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
-  .container .web-wrapper .boxes .box-header {
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
+  .container .web-wrapper main .boxes .box-header {
     font-size: 22px;
   }
 }
-.container .web-wrapper .boxes p {
+.container .web-wrapper main .boxes .sub-box-header {
   font-family: Assistant;
   font-weight: normal;
   font-size: 18px;
@@ -425,12 +456,17 @@ h6 {
   margin-bottom: 60px;
   color: #666666;
 }
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
+  .container .web-wrapper main .boxes .sub-box-header {
+    width: 202px;
+  }
+}
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper .boxes p {
+  .container .web-wrapper main .boxes .sub-box-header {
     margin-bottom: 58px;
   }
 }
-.container .web-wrapper .boxes img {
+.container .web-wrapper main .boxes img {
   max-width: 75px;
   max-height: 52px;
 }/*# sourceMappingURL=styles.css.map */

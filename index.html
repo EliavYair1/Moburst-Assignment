@@ -21,19 +21,19 @@
         <h2 class="side-header">תוכנית השותפים שלנו מעניינת אתכם? השאירו פרטים ונתקשר אליכם</h2>
   <div class="input-wrapper">
     <div class="sol-inp">
-      <input type="text"  required>
-      <label for="">שם מלא</label>
+      <input type="text" id="name"  required>
+      <label for="name">שם מלא</label>
     </div>
     <div class="sol-inp">
-      <input type="tel" required>
-      <label for="">טלפון</label>
+      <input type="tel" minlength="8" maxlength="20" id="telephone" required>
+      <label for="telephone">טלפון</label>
     </div>
     <div class="sol-inp">
-      <input type="email" required>
-      <label for="">מייל(לא חובה)</label>
+      <input type="email" id="email" required>
+      <label for="email">מייל(לא חובה)</label>
     </div>
   </div>
-  <button class="form-btn">אני רוצה להצטרף 
+  <button onsubmit="submit" class="form-btn">אני רוצה להצטרף 
   </button>
       </form>
     </section>
@@ -44,7 +44,7 @@
     <header>
       <div class="caption-banner">
         <h1 >הצטרפו לתוכנית השותפים של תות תקשורת</h1>
-        <p>נותנים שירותי מחשוב, IT, מרכזיות? מספקים שירותי ייעוץ לעסקים או אינטגרציה? תות עסקים מזמינה אתכם לשדרג את הלקוחות שלכם עם מגוון שירותי תקשורת מתקדמים לעסק ולהרוויח עמלות ותמריצים משתלמים ביותר</p>
+        <p class="banner-sub">נותנים שירותי מחשוב, IT, מרכזיות? מספקים שירותי ייעוץ לעסקים או אינטגרציה? תות עסקים מזמינה אתכם לשדרג את הלקוחות שלכם עם מגוון שירותי תקשורת מתקדמים לעסק ולהרוויח עמלות ותמריצים משתלמים ביותר</p>
     </div>
   </header>
 
@@ -57,28 +57,29 @@
     <main>
     <div class="main-header">
       <h2 class="m-headline">מודל עמלות מותאם אישית לעסק שלכם</h2>
-      <p>אנחנו תות עסקים, נתאים עבורכם מודל תגמולים שמתאים בדיוק לאופי הפעילות שלכם, כך שתוכלו ליהנות מתמריצים משתלמים במיוחד</p>
+      <p class="sub-headline">אנחנו תות עסקים, נתאים עבורכם מודל תגמולים שמתאים בדיוק לאופי הפעילות שלכם, כך שתוכלו ליהנות מתמריצים משתלמים במיוחד</p>
     </div>
 
     <div class="box-wrapper">
     <div class="boxes">
-      <img src="./images/icons/walletS.png" alt="" class="wallet">
-      <h2 class="box-header">עמלה עבור ליד
+      <img loading="lazy" src="./images/icons/walletS.png" alt="" class="wallet">
+      <h2 class="box-header" id="mid-box-header">עמלה עבור ליד
         שנסגר במכירה</h2>
-      <p>העבירו לידים פוטנציאליים למוקד המכירות של תות עסקים. במידה והם יהפכו למכירה, תקבלו עבורם עמלה</p>
+      <p class="sub-box-header">העבירו לידים פוטנציאליים למוקד המכירות של תות עסקים. במידה והם יהפכו למכירה, תקבלו עבורם עמלה</p>
     </div>
     <div class="boxes" id="middle-box">
-      <img src="./images/icons/moneyS.png" alt="">
+      <img loading="lazy"  src="./images/icons/moneyS.png" alt="">
       <h2 class="box-header">עמלה על מכירה
         מלאה</h2>
-      <p>כל מכירה של מגוון שירותי תות עסקים תזכה אתכם בעמלה</p>
+      <p class="sub-box-header">כל מכירה של מגוון שירותי תות עסקים תזכה אתכם בעמלה</p>
     </div>
     <div class="boxes">
-      <img src="./images/icons/graphS.png" alt="" class="graph">
+      <img loading="lazy"  src="./images/icons/graphS.png" alt="" class="graph">
       <h2 class="box-header">עמלה קבועה על תמיכה בלקוחות תות עסקים</h2>
-      <p>קבלו תגמולים חודשיים בעבור שירותי תמיכה וליווי שוטפים ללקוחות תות עסקים</p>
+      <p class="sub-box-header">קבלו תגמולים חודשיים בעבור שירותי תמיכה וליווי שוטפים ללקוחות תות עסקים</p>
     </div>
   </div>
+
     </main>
   </div>
 
