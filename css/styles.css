@@ -45,6 +45,8 @@ h6 {
 .container {
   width: 100vw;
   display: flex;
+  /* sidenav on desktop */
+  /* header section */
 }
 .container .sidenav {
   display: none;
@@ -90,6 +92,8 @@ h6 {
     border: solid 1px #d5d5d5;
     background-color: #fff;
     text-align: right;
+    color: #000000;
+    font-weight: bold;
     font-size: 20px;
     font-family: Assistant;
   }
@@ -131,6 +135,7 @@ h6 {
 .container .web-wrapper {
   width: 100vw;
   /* ########## --end of the header section--######## */
+  /* main section */
 }
 .container .web-wrapper header {
   width: 100%;
@@ -411,6 +416,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* end of main section */
 }
 @media (max-width : 767px) and (min-width:360px) {
   .container .web-wrapper main .boxes {

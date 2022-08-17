@@ -1,64 +1,12 @@
-$grey: #717171;
-$black: #000000;
-$web-font: Assistant;
-$bgc: #fafafa;
-$aqua: #24e7c8;
-$media-biggest: ' only screen and (min-width:1921px )';
-$media-desktop: ' (max-width : 1920px) and (min-width:1200px )';
-$media-laptop: ' (max-width : 1199px) and (min-width:992px)';
-$media-tablet: '(max-width : 991px) and (min-width:768px)';
-$media-mobile: '(max-width : 767px) and (min-width:360px)';
-$media-smallest: 'only screen and (max-width:359px)';
-
-// css reset
-html {
-  height: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  height: 100%;
-
-  -webkit-font-smoothing: antialiased;
-}
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-#root,
-#__next {
-  isolation: isolate;
-}
+@import './variables';
+@import './reset';
 
 // web design
-
 .container {
   width: 100vw;
   display: flex;
+
+  /* sidenav on desktop */
 
   .sidenav {
     display: none;
@@ -99,6 +47,8 @@ h6 {
             border: solid 1px #d5d5d5;
             background-color: #fff;
             text-align: right;
+            color: $black;
+            font-weight: bold;
             font-size: 20px;
             font-family: Assistant;
             &:focus + label,
@@ -141,6 +91,7 @@ h6 {
       }
     }
   }
+  /* header section */
 
   .web-wrapper {
     width: 100vw;
@@ -298,6 +249,7 @@ h6 {
     }
     /* ########## --end of the header section--######## */
 
+    /* main section */
     main {
       background-color: $bgc;
       width: 100%;
@@ -443,6 +395,7 @@ h6 {
           max-width: 75px;
           max-height: 52px;
         }
+        /* end of main section */
       }
     }
   }

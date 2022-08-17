@@ -21,7 +21,7 @@
         <h2 class="side-header">תוכנית השותפים שלנו מעניינת אתכם? השאירו פרטים ונתקשר אליכם</h2>
   <div class="input-wrapper">
     <div class="sol-inp">
-      <input type="text" id="name"  required>
+      <input type="text" id="name" &  required>
       <label for="name">שם מלא</label>
     </div>
     <div class="sol-inp">
@@ -29,8 +29,8 @@
       <label for="telephone">טלפון</label>
     </div>
     <div class="sol-inp">
-      <input type="email" id="email" required>
-      <label for="email">מייל(לא חובה)</label>
+      <input type="email"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" required>
+      <label for="email" >מייל(לא חובה)</label>
     </div>
   </div>
   <button onsubmit="submit" class="form-btn">אני רוצה להצטרף 
