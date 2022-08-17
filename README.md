@@ -6,7 +6,7 @@ I was asked to build a responsive web page pixel perfect according to a zeplin d
 
 ## How to
 
-Download the files .
+Download the files/clone/pull .
 
 Enter the project directory cd project-folder  .
 
