@@ -5,7 +5,9 @@
 .container {
   width: 100vw;
   display: flex;
-
+  @media #{$media-desktop},#{$media-biggest} {
+    min-width: 1700px;
+  }
   /* sidenav on desktop */
 
   .sidenav {
@@ -295,7 +297,7 @@
             margin-bottom: 11px;
           }
           @media #{$media-desktop} ,#{$media-biggest} {
-            font-size: 26px;
+            font-size: 32px;
           }
         }
         p {
@@ -309,7 +311,7 @@
             letter-spacing: 0.03px;
             line-height: 1.36;
           }
-          @media #{$media-desktop} {
+          @media #{$media-desktop},#{$media-biggest} {
             font-size: 22px;
           }
         }
@@ -350,13 +352,50 @@
         align-items: center;
         text-align: center;
         @media #{$media-mobile} {
+          .graph2 {
+            display: none;
+          }
+          .wallet2 {
+            display: none;
+          }
           max-width: 328px;
         }
         @media #{$media-tablet} {
+          .graph2 {
+            display: none;
+          }
+          .wallet2 {
+            display: none;
+          }
           width: 670px;
         }
         @media #{$media-laptop} {
-          max-width: 280px;
+          .wallet {
+            display: none;
+          }
+          .graph2 {
+            display: block;
+          }
+          .wallet2 {
+            display: block;
+          }
+          .graph {
+            display: none;
+          }
+        }
+        @media #{$media-desktop},#{$media-biggest} {
+          .wallet {
+            display: none;
+          }
+          .graph2 {
+            display: block;
+          }
+          .wallet2 {
+            display: block;
+          }
+          .graph {
+            display: none;
+          }
         }
         .box-header {
           font-size: 24px;

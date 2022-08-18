@@ -48,6 +48,11 @@ h6 {
   /* sidenav on desktop */
   /* header section */
 }
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
+  .container {
+    min-width: 1700px;
+  }
+}
 .container .sidenav {
   display: none;
 }
@@ -355,7 +360,7 @@ h6 {
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
   .container .web-wrapper main .main-header .m-headline {
-    font-size: 26px;
+    font-size: 32px;
   }
 }
 .container .web-wrapper main .main-header p {
@@ -372,7 +377,7 @@ h6 {
     line-height: 1.36;
   }
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
   .container .web-wrapper main .main-header p {
     font-size: 22px;
   }
@@ -422,15 +427,50 @@ h6 {
   .container .web-wrapper main .boxes {
     max-width: 328px;
   }
+  .container .web-wrapper main .boxes .graph2 {
+    display: none;
+  }
+  .container .web-wrapper main .boxes .wallet2 {
+    display: none;
+  }
 }
 @media (max-width : 991px) and (min-width:768px) {
   .container .web-wrapper main .boxes {
     width: 670px;
   }
+  .container .web-wrapper main .boxes .graph2 {
+    display: none;
+  }
+  .container .web-wrapper main .boxes .wallet2 {
+    display: none;
+  }
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper main .boxes {
-    max-width: 280px;
+  .container .web-wrapper main .boxes .wallet {
+    display: none;
+  }
+  .container .web-wrapper main .boxes .graph2 {
+    display: block;
+  }
+  .container .web-wrapper main .boxes .wallet2 {
+    display: block;
+  }
+  .container .web-wrapper main .boxes .graph {
+    display: none;
+  }
+}
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
+  .container .web-wrapper main .boxes .wallet {
+    display: none;
+  }
+  .container .web-wrapper main .boxes .graph2 {
+    display: block;
+  }
+  .container .web-wrapper main .boxes .wallet2 {
+    display: block;
+  }
+  .container .web-wrapper main .boxes .graph {
+    display: none;
   }
 }
 .container .web-wrapper main .boxes .box-header {
