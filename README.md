@@ -14,7 +14,8 @@ Install the node-modules by running "npm install".
 
 Then run the command : "gulp" on the Terminal.
 
-And your'e all set.
+And your'e all set .
+
 
 
 
@@ -23,5 +24,5 @@ And your'e all set.
 
 credit by- eliav yair.
 
-Enjoy
+Enjoy  :-)
 
