@@ -211,7 +211,7 @@ h6 {
   .container .web-wrapper header {
     background-image: url("../images/desktop/banner.png");
     background-position: 100% 25%;
-    min-width: 1290px;
+    min-width: 1440px;
     height: 650px;
     align-items: flex-end;
   }
@@ -220,11 +220,20 @@ h6 {
     margin-right: 127px;
     margin-bottom: 176px;
   }
+}
+@media (max-width : 1920px) and (min-width:1200px ) and (max-width : 1800px) and (min-width:1200px), only screen and (min-width:1921px ) and (max-width : 1800px) and (min-width:1200px) {
+  .container .web-wrapper header .caption-banner {
+    margin-right: 500px;
+  }
+}
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
   .container .web-wrapper header .caption-banner h1 {
     font-size: 48px;
     text-align: right;
     width: 539px;
   }
+}
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
   .container .web-wrapper header .caption-banner p {
     text-align: right;
     line-height: 1.32;
@@ -301,7 +310,12 @@ h6 {
   color: #fff;
   border: solid 2px #fff;
 }
-.container .web-wrapper main {
+@media (max-width : 1800px) and (min-width:1200px) {
+  .container .web-wrapper .main-section {
+    margin-right: 350px;
+  }
+}
+.container .web-wrapper .main-section main {
   background-color: #fafafa;
   width: 100%;
   display: flex;
@@ -310,11 +324,11 @@ h6 {
   align-items: center;
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
-  .container .web-wrapper main {
+  .container .web-wrapper .main-section main {
     height: 584px;
   }
 }
-.container .web-wrapper main .main-header {
+.container .web-wrapper .main-section main .main-header {
   width: 328px;
   text-align: center;
   margin-bottom: 46px;
@@ -322,48 +336,47 @@ h6 {
   font-family: Assistant;
 }
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper main .main-header {
+  .container .web-wrapper .main-section main .main-header {
     width: 732px;
     margin-top: 58px;
   }
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper main .main-header {
+  .container .web-wrapper .main-section main .main-header {
     width: 926px;
     margin-top: 58px;
     margin-bottom: 74px;
   }
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
-  .container .web-wrapper main .main-header {
+  .container .web-wrapper .main-section main .main-header {
     width: 686px;
     margin-top: 58px;
     margin-bottom: 44px;
   }
 }
-.container .web-wrapper main .main-header .m-headline {
+.container .web-wrapper .main-section main .main-header .m-headline {
   font-size: 26px;
   margin-bottom: 21px;
-  line-height: 1.75;
   letter-spacing: 0.04px;
 }
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper main .main-header .m-headline {
+  .container .web-wrapper .main-section main .main-header .m-headline {
     margin-bottom: 19px;
   }
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper main .main-header .m-headline {
+  .container .web-wrapper .main-section main .main-header .m-headline {
     font-size: 32px;
     margin-bottom: 11px;
   }
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
-  .container .web-wrapper main .main-header .m-headline {
+  .container .web-wrapper .main-section main .main-header .m-headline {
     font-size: 32px;
   }
 }
-.container .web-wrapper main .main-header p {
+.container .web-wrapper .main-section main .main-header p {
   color: #666666;
   font-size: 18px;
   line-height: 1.33;
@@ -371,39 +384,39 @@ h6 {
   text-align: center;
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper main .main-header p {
+  .container .web-wrapper .main-section main .main-header p {
     font-size: 28px;
     letter-spacing: 0.03px;
     line-height: 1.36;
   }
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
-  .container .web-wrapper main .main-header p {
+  .container .web-wrapper .main-section main .main-header p {
     font-size: 22px;
   }
 }
 @media (max-width : 767px) and (min-width:360px) {
-  .container .web-wrapper main .main-header .sub-headline {
-    max-width: 280px;
+  .container .web-wrapper .main-section main .main-header .sub-headline {
+    max-width: 328px;
     margin: 0 auto;
   }
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
-  .container .web-wrapper main .main-header .sub-headline {
+  .container .web-wrapper .main-section main .main-header .sub-headline {
     max-width: 520px;
     margin: 0 auto;
   }
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
-  .container .web-wrapper main .box-wrapper {
+  .container .web-wrapper .main-section main .box-wrapper {
     display: flex;
-    justify-content: center;
-    gap: 54px;
+    gap: 40px;
     flex-direction: row-reverse;
+    width: 686px;
   }
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper main .box-wrapper {
+  .container .web-wrapper .main-section main .box-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 54px;
@@ -411,108 +424,118 @@ h6 {
     margin-bottom: 123px;
   }
 }
-@media (max-width : 1920px) and (min-width:1200px ) {
-  .container .web-wrapper main .box-wrapper {
-    width: 686px;
+@media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
+  .container .web-wrapper .main-section main #middle-box .box-header {
+    margin-bottom: 15.5px;
+    width: 160px;
   }
 }
-.container .web-wrapper main .boxes {
+.container .web-wrapper .main-section main .boxes {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 202px;
   /* end of main section */
 }
-@media (max-width : 767px) and (min-width:360px) {
-  .container .web-wrapper main .boxes {
+@media (max-width : 767px) and (min-width:360px), only screen and (max-width:359px) {
+  .container .web-wrapper .main-section main .boxes {
     max-width: 328px;
   }
-  .container .web-wrapper main .boxes .graph2 {
+  .container .web-wrapper .main-section main .boxes .graph2 {
     display: none;
   }
-  .container .web-wrapper main .boxes .wallet2 {
+  .container .web-wrapper .main-section main .boxes .wallet2 {
     display: none;
   }
 }
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper main .boxes {
+  .container .web-wrapper .main-section main .boxes {
     width: 670px;
   }
-  .container .web-wrapper main .boxes .graph2 {
+  .container .web-wrapper .main-section main .boxes .graph2 {
     display: none;
   }
-  .container .web-wrapper main .boxes .wallet2 {
+  .container .web-wrapper .main-section main .boxes .wallet2 {
     display: none;
   }
 }
 @media (max-width : 1199px) and (min-width:992px) {
-  .container .web-wrapper main .boxes .wallet {
+  .container .web-wrapper .main-section main .boxes .wallet {
     display: none;
   }
-  .container .web-wrapper main .boxes .graph2 {
+  .container .web-wrapper .main-section main .boxes .graph2 {
     display: block;
   }
-  .container .web-wrapper main .boxes .wallet2 {
+  .container .web-wrapper .main-section main .boxes .wallet2 {
     display: block;
   }
-  .container .web-wrapper main .boxes .graph {
+  .container .web-wrapper .main-section main .boxes .graph {
     display: none;
   }
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
-  .container .web-wrapper main .boxes .wallet {
+  .container .web-wrapper .main-section main .boxes .wallet {
     display: none;
   }
-  .container .web-wrapper main .boxes .graph2 {
+  .container .web-wrapper .main-section main .boxes .graph2 {
     display: block;
   }
-  .container .web-wrapper main .boxes .wallet2 {
+  .container .web-wrapper .main-section main .boxes .wallet2 {
     display: block;
   }
-  .container .web-wrapper main .boxes .graph {
+  .container .web-wrapper .main-section main .boxes .graph {
     display: none;
   }
 }
-.container .web-wrapper main .boxes .box-header {
+.container .web-wrapper .main-section main .boxes .box-header {
   font-size: 24px;
   font-family: Assistant;
   font-weight: bold;
   margin: 15px 0 17px 0;
+  width: 202px;
 }
 @media (max-width : 767px) and (min-width:360px) {
-  .container .web-wrapper main .boxes .box-header {
+  .container .web-wrapper .main-section main .boxes .box-header {
     max-width: 267px;
+    width: 278px;
   }
 }
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper main .boxes .box-header {
+  .container .web-wrapper .main-section main .boxes .box-header {
     margin: 15px 0 9px 0;
+    width: 415px;
   }
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
-  .container .web-wrapper main .boxes .box-header {
+  .container .web-wrapper .main-section main .boxes .box-header {
     font-size: 22px;
   }
 }
-.container .web-wrapper main .boxes .sub-box-header {
+.container .web-wrapper .main-section main .boxes .sub-box-header {
   font-family: Assistant;
   font-weight: normal;
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 60px;
-  color: #666666;
+  color: #717171;
 }
 @media (max-width : 1920px) and (min-width:1200px ), only screen and (min-width:1921px ) {
-  .container .web-wrapper main .boxes .sub-box-header {
+  .container .web-wrapper .main-section main .boxes .sub-box-header {
     width: 202px;
   }
 }
 @media (max-width : 991px) and (min-width:768px) {
-  .container .web-wrapper main .boxes .sub-box-header {
+  .container .web-wrapper .main-section main .boxes .sub-box-header {
     margin-bottom: 58px;
   }
 }
-.container .web-wrapper main .boxes img {
+@media (max-width : 767px) and (min-width:360px), only screen and (max-width:359px) {
+  .container .web-wrapper .main-section main .boxes .sub-box-header {
+    width: 318px;
+  }
+}
+.container .web-wrapper .main-section main .boxes img {
   max-width: 75px;
   max-height: 52px;
 }/*# sourceMappingURL=styles.css.map */
